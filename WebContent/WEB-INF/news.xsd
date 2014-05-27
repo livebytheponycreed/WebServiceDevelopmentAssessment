@@ -25,7 +25,7 @@
 	
 	<xs:simpleType name="emailType">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[A-Za-z0-9.-_+!#%&'*`{}|~]+@[A-Za-z0-9.-_]+\.[A-Za-z]+"/> <!-- emails contain "@" and ".com" -->
+			<xs:pattern value="[A-Za-z0-9.\-_+!#%&'*`{}|~?/^]+@[A-Za-z0-9.\-_]+\.[A-Za-z]+"/> <!-- emails contain "@" and ".com" -->
 		</xs:restriction>
 	</xs:simpleType>
 	
