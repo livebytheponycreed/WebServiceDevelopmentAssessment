@@ -25,13 +25,13 @@
 	
 	<xs:simpleType name="emailType">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[A-Za-z0-9\.\_\%\+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2, 4}"/> <!-- emails contain "@" and ".com" -->
+			<xs:pattern value="[[A-Za-z0-9.\-_+!#%&'*`{}|~?/^]+@[A-Za-z0-9.\-_]+\.[A-Za-z]+"/> <!-- emails contain "@" and ".com" -->
 		</xs:restriction>
 	</xs:simpleType>
 	
 	<xs:simpleType name="nameType">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="[A-Z][a-z]*[\s[A-Z][A-Za-z]*]+"/> <!-- Full Names are encouraged -->
+			<xs:pattern value="[A-Z][a-z]*(\s[A-Z][A-Za-z]*)+"/> <!-- Full Names are encouraged -->
 		</xs:restriction>
 	</xs:simpleType>
 	
